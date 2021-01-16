@@ -1,1 +1,2 @@
-# react-gorilla-recipes
+# react-gorilla-receipts
+ 
