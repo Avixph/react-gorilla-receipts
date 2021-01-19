@@ -1,0 +1,9 @@
+:root {
+  --first-color: #fe8050;
+  --second-color: #4c0082;
+}
+
+.app-main {
+  display: flex;
+  justify-content: space-between;
+}

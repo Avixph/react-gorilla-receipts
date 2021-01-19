@@ -1,0 +1,21 @@
+:root {
+  --first-color: #fe8050;
+  --second-color: #4c0082;
+}
+
+.app-view {
+  border: 1px solid var(--first-color);
+  padding: 1em;
+  margin: 2em;
+  width: 150px;
+  height: 400px;
+  flex-basis: 30%;
+}
+
+.person-name {
+  font-size: 30px;
+}
+
+.order-items {
+  color: var(--second-color);
+}

@@ -1,0 +1,20 @@
+:root {
+  --first-color: #fe8050;
+  --second-color: #4c0082;
+}
+
+header {
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--first-color);
+}
+header .app-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  padding: 4px 0;
+  margin-left: 20px;
+  overflow: hidden;
+  float: left;
+}
