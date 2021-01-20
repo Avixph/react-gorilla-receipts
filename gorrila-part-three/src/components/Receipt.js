@@ -1,6 +1,14 @@
+import { useState } from "react";
 import "../css/Receipt.css";
 
-function Receipt({ person, order, ...receipt }) {
+function Receipt({ person, order, paid, ...receipt }) {
+  const [toggler, setToggler] = useState(paid);
+
+  const isPaid = () => {
+    setToggler((toggler) => (toggler ? "Paid" : "Un-Paid"));
+  };
+  console.log(isPaid);
+
   return (
     <div className="app-view">
       <div className="single-receipt">
@@ -30,6 +38,10 @@ function Receipt({ person, order, ...receipt }) {
           <h5>
             <span className="order-items">Cost:</span> ${order.cost}
           </h5>
+          <div className="paid-toggle">
+            <button onClick={isPaid}>Paid</button>
+            <h5>{toggler}</h5>
+          </div>
         </div>
       </div>
     </div>
